@@ -379,7 +379,7 @@ export default function App() {
                   <SectionTitle color={ORANGE}>Retirement Income Goal</SectionTitle>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
                     <Input label="Desired annual income (£)" type="number" placeholder="e.g. 30000" value={annualIncome} onChange={e => setAnnualIncome(e.target.value)} />
-                    <Input label="Safe withdrawal rate (%)" type="number" placeholder="4" value={withdrawalRate} onChange={e => setWithdrawalRate(e.target.value)} />
+                    <Input label="Withdrawal rate (%)" type="number" placeholder="4" value={withdrawalRate} onChange={e => setWithdrawalRate(e.target.value)} />
                   </div>
                   {annualIncome && withdrawalRate && (
                     <div style={{ background: "#fff4ee", border: "1px solid #fcd9c4", borderRadius: 8, padding: "12px 16px", fontSize: 14, fontWeight: 700, color: ORANGE }}>
